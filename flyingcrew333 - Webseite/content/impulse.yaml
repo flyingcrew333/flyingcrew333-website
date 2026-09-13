@@ -1,0 +1,127 @@
+- slug: liebe-ist-unendlich
+  title: "Liebe ist unendlich"
+  theme: t1
+  icon: '<path d="M12 21C7 17 3 13.5 3 9C3 6 5.2 4 8 4C9.8 4 11.2 5 12 6.3C12.8 5 14.2 4 16 4C18.8 4 21 6 21 9C21 13.5 17 17 12 21Z"/>'
+  body:
+    - "Liebe ist keine Ressource, die aufgebraucht werden kann. Sie ist ein Feld, aus dem du schöpfen darfst — ohne Ende, ohne Bedingung."
+    - "Spüre für einen Moment, wie sich dein Herz öffnet. Nicht nach außen gerichtet auf einen bestimmten Menschen, sondern einfach als das, was du bist."
+    - "Lass zu, dass diese Liebe zuerst dir selbst gilt. Von dort aus fließt sie ganz von allein weiter — in alles, was dich umgibt."
+
+- slug: maria
+  title: "Maria"
+  theme: t3
+  icon: '<path d="M12 3L14 9L20 10L15.5 14L17 20L12 17L7 20L8.5 14L4 10L10 9Z"/>'
+  body:
+    - "Manche Begleiter zeigen sich nicht als Kraft oder Prinzip, sondern als Präsenz. Maria steht für bedingungslose, mütterliche Führung — für das Gefühl, gehalten zu sein, auch wenn der Weg unklar ist."
+    - "Wenn du heute an Grenzen stößt, darfst du dich dieser Präsenz anvertrauen. Du musst nichts allein tragen."
+    - "Nimm dir einen ruhigen Moment und spüre, wie sich etwas in dir entspannt, sobald du zulässt, begleitet zu werden."
+
+- slug: zeit
+  title: "Zeit"
+  theme: t4
+  icon: '<circle cx="12" cy="12" r="8"/><path d="M12 8V12L15 14"/>'
+  body:
+    - "Zeit fühlt sich oft an wie ein Gegner — etwas, das drängt, das fehlt, das man einholen muss. Doch Zeit ist auch ein Raum, den du selbst gestalten darfst."
+    - "Frage dich heute: Wofür nehme ich mir wirklich Zeit? Und wofür lasse ich Zeit einfach verstreichen, ohne bewusst dabei zu sein?"
+    - "Ein einziger bewusster Atemzug kann genügen, um wieder ganz im Jetzt anzukommen."
+
+- slug: meditation-1
+  title: "Meditation 1"
+  theme: t2
+  icon: '<path d="M12 3V6M12 3C9 3 8 6 8 8C8 12 12 12 12 16C12 18 10.5 19 9 19"/><path d="M6 21H18"/>'
+  body:
+    - "Setz dich für einen Moment bequem hin und schließe die Augen. Atme dreimal bewusst ein und aus, ohne den Atem zu verändern — beobachte ihn nur."
+    - "Lass mit jedem Ausatmen etwas los, das du heute nicht mehr tragen musst. Lass mit jedem Einatmen Raum entstehen für das, was jetzt wichtig ist."
+    - "Bleib so lange in dieser Stille, wie es sich für dich richtig anfühlt."
+
+- slug: freude
+  title: "Freude"
+  theme: t1
+  icon: '<circle cx="12" cy="12" r="4.5"/><path d="M12 3V5M12 19V21M4.2 4.2L5.6 5.6M18.4 18.4L19.8 19.8M3 12H5M19 12H21M4.2 19.8L5.6 18.4M18.4 5.6L19.8 4.2"/>'
+  body:
+    - "Freude braucht keinen großen Anlass. Oft versteckt sie sich in kleinen Momenten, die wir im Alltag übersehen."
+    - "Woran hast du heute schon Freude gehabt — oder woran könntest du sie noch entdecken? Ein Geruch, ein Lachen, ein Lichtstrahl auf der Haut."
+    - "Erlaube dir, diese kleinen Momente bewusst wahrzunehmen. Sie sind der Zugang zu mehr Leichtigkeit in deinem Alltag."
+
+- slug: meditation-2
+  title: "Meditation 2"
+  theme: t3
+  icon: '<path d="M12 3V6M12 3C9 3 8 6 8 8C8 12 12 12 12 16C12 18 10.5 19 9 19"/><path d="M6 21H18"/>'
+  body:
+    - "Stell dir vor, wie mit jedem Atemzug ein sanftes Licht durch deinen Körper strömt — von den Fußsohlen bis zum Scheitel."
+    - "Lass dieses Licht jede Anspannung berühren und langsam auflösen. Du musst nichts tun, außer es geschehen zu lassen."
+    - "Bleib eine Weile in diesem Zustand von Weite und lass dich tragen."
+
+- slug: schoepferkraft
+  title: "Schöpferkraft"
+  theme: t2
+  icon: '<path d="M6 20V13C6 9 8.5 5 12 3C15.5 5 18 9 18 13V20"/><path d="M9 20V15C9 13 10.3 12 12 12C13.7 12 15 13 15 15V20"/>'
+  body:
+    - "Was liegt noch verborgen in dir? Welche Fähigkeiten, Gaben und Kräfte sind in dir angelegt und warten darauf, erweckt zu werden?"
+    - "Nimm dir einen Moment und lass dieses innere Bild ganz klar vor dir entstehen. Siehst du die kleine Hütte in dir — einfach, vielleicht begrenzt geglaubt — und doch umgeben von einer lebendigen, strahlenden Energie?"
+    - "Jetzt öffne diesen Raum bewusst. Öffne dein Inneres. Erlaube dir, weiter zu werden. Aus der Hütte wird ein Schloss — weit, lichtvoll, kraftvoll und voller Möglichkeiten."
+    - "Erkenne klar: In dir liegt eine Schöpferkraft, die größer ist als deine bisherigen Gedanken und Vorstellungen. Du bist fähig, dein inneres Erleben und damit dein Leben bewusst zu gestalten. Vertraue dieser Kraft. Lass dich führen — von deiner Intuition, deiner inneren Wahrheit und der Energie, die dich von innen heraus wachsen lässt."
+    - "Möchtest du tiefer gehen? Ich unterstütze dich gerne auf deinem Weg."
+
+- slug: starseeds
+  title: "Starseeds"
+  theme: t4
+  icon: '<path d="M12 2L13.5 8.5L20 7L15.5 12L20 17L13.5 15.5L12 22L10.5 15.5L4 17L8.5 12L4 7L10.5 8.5Z"/>'
+  body:
+    - "Manche Menschen spüren schon früh, dass sie nicht ganz „von hier“ sind — eine tiefe Sehnsucht nach etwas Größerem, das über den Alltag hinausgeht."
+    - "Wenn du dich darin wiedererkennst, darfst du wissen: Diese Sehnsucht ist kein Fehler, sondern ein Hinweis auf dein größeres Potential."
+    - "Vertraue dem, was in dir angelegt ist, auch wenn es sich (noch) nicht vollständig erklären lässt."
+
+- slug: neue-moeglichkeiten
+  title: "Neue Möglichkeiten"
+  theme: t1
+  icon: '<circle cx="12" cy="12" r="9"/><path d="M8 14L11 17L16 9"/>'
+  body:
+    - "Manchmal glauben wir, ein Weg sei bereits festgelegt — dabei warten oft ganz neue Möglichkeiten direkt hinter der nächsten Ecke."
+    - "Frage dich heute: Wo halte ich an einer alten Vorstellung fest, obwohl sich längst etwas Neues zeigen möchte?"
+    - "Öffne dich für das, was noch nicht sichtbar ist. Der erste Schritt genügt, um Neues entstehen zu lassen."
+
+- slug: fluss-des-lebens
+  title: "Fluss des Lebens"
+  theme: t2
+  icon: '<path d="M4 15C6 12 8 17 10 14C12 11 14 16 16 13C18 10 20 15 20 15"/><path d="M4 9C6 6 8 11 10 8C12 5 14 10 16 7C18 4 20 9 20 9"/>'
+  body:
+    - "Das Leben fließt — wie Wasser, das seinen Weg immer findet, auch um Hindernisse herum."
+    - "Wo in deinem Leben widerstehst du gerade diesem Fluss? Und wo dürftest du wieder mehr vertrauen und dich einfach tragen lassen?"
+    - "Nimm dir einen Moment und spüre die Bewegung, die durch dich hindurchgeht, wenn du nicht dagegen ankämpfst."
+
+- slug: einssein
+  title: "Einssein"
+  theme: t3
+  icon: '<path d="M12 22C6 22 2 18 2 12C2 6 6 2 12 2C10 6 10 18 12 22Z"/>'
+  body:
+    - "Einssein bedeutet, die Trennung zwischen dir und allem, was dich umgibt, für einen Moment loszulassen."
+    - "Spüre die Verbindung zur Natur, zu den Menschen um dich, zu etwas Größerem — nicht als Konzept, sondern als Gefühl."
+    - "In diesem Zustand gibt es kein Außen und kein Innen mehr. Nur Verbundenheit."
+
+- slug: dankbarkeit
+  title: "Dankbarkeit"
+  theme: t4
+  icon: '<path d="M12 3C12 3 8 8 8 13C8 16.3 9.8 19 12 19C14.2 19 16 16.3 16 13C16 8 12 3 12 3Z"/>'
+  body:
+    - "Dankbarkeit verändert den Blick auf den eigenen Alltag — sie lenkt die Aufmerksamkeit auf das, was bereits da ist, statt auf das, was fehlt."
+    - "Nimm dir einen Moment und denke an drei Dinge, für die du heute dankbar bist — so klein sie auch scheinen mögen."
+    - "Spüre, wie sich mit dieser Haltung etwas in dir öffnet und leichter wird."
+
+- slug: anderswelt
+  title: "Anderswelt"
+  theme: t1
+  icon: '<path d="M20 14.5A8 8 0 1 1 9.5 4A6.5 6.5 0 0 0 20 14.5Z"/>'
+  body:
+    - "Neben dem, was wir mit den Augen sehen, gibt es eine feinstoffliche Ebene — eine Anderswelt, die sich eher fühlen als beweisen lässt."
+    - "Wenn du dich heute besonders sensibel oder berührt fühlst, ist das kein Zufall. Du bist gerade näher an dieser Ebene, als dir bewusst ist."
+    - "Vertraue diesem feinen Empfinden, auch wenn es sich (noch) nicht in Worte fassen lässt."
+
+- slug: krafttiere
+  title: "Krafttiere"
+  theme: t2
+  icon: '<circle cx="7" cy="8" r="1.6"/><circle cx="12" cy="6" r="1.6"/><circle cx="17" cy="8" r="1.6"/><path d="M8 17C8 14 9.8 12 12 12C14.2 12 16 14 16 17"/>'
+  body:
+    - "Krafttiere begleiten uns als symbolische Kräfte — jedes mit einer eigenen Qualität, die uns in bestimmten Momenten unterstützen kann."
+    - "Welches Tier taucht in deinen Gedanken, Träumen oder deiner Umgebung immer wieder auf? Es möchte dir vielleicht gerade jetzt etwas mitteilen."
+    - "Nimm dir einen Moment, um innezuhalten und zuzuhören, welche Kraft sich dir zeigen möchte."

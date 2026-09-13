@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Mein Weg — {{ site.brand }}{% endblock %}
+{% block content %}
+
+<div class="page-header wrap">
+  <p class="eyebrow">Mein Weg</p>
+</div>
+
+<section class="tight">
+  <div class="wrap about-grid">
+    <div class="portrait-wrap reveal">
+      <div class="photo-frame tint portrait-frame">
+        <img src="{{ base_url }}/assets/images/meinweg-2.jpg" alt="{{ site.person }}" loading="lazy">
+      </div>
+    </div>
+    <div class="about-text reveal d1">
+      <h2 style="margin:0 0 24px; font-size:clamp(26px,3.6vw,38px);">Als Energetikerin begleite ich Menschen dabei, neue Perspektiven zu entdecken</h2>
+      <p>Ich stärke ihre Intuition und bringe mehr Leichtigkeit in ihr Leben. Im Mittelpunkt meiner Arbeit stehen die Verbindung von Herz, Bauchgefühl und Energie sowie die bewusste Wahrnehmung der eigenen inneren Ressourcen.</p>
+      <p>Dabei nutze ich verschiedene Methoden der Energiearbeit, Meditation und spirituellen Begleitung. Besonders wichtig sind mir Dankbarkeit, die Verbindung zur Natur und das Vertrauen in die eigene innere Weisheit.</p>
+      <p>Meine Erfahrungen haben mir gezeigt, dass sich dadurch mehr Klarheit, Lebensfreude und innere Balance entwickeln können. Jeder Mensch hat seinen eigenen Weg — meine Arbeit soll dich dabei unterstützen, diesen Weg bewusster wahrzunehmen und mit mehr Vertrauen zu gehen.</p>
+    </div>
+  </div>
+
+  <div class="wrap timeline">
+    <div class="tl-row"><div class="tl-year">2019</div><div><div class="tl-title">Basisseminar der Spiritual Response Technique (SRT)</div><div class="tl-people">Rosemarie Babl</div></div></div>
+    <div class="tl-row"><div class="tl-year">2020</div><div><div class="tl-title">Fortgeschrittenen-Seminar SRT / Medium Ship Boot Camp</div><div class="tl-people">Rosemarie Babl, Mikel Lizarralde</div></div></div>
+    <div class="tl-row"><div class="tl-year">2022</div><div><div class="tl-title">Sterbebegleitung &amp; Medialität · Seminar der spirituellen Umstrukturierung (SpU) · Trance &amp; Channeling</div><div class="tl-people">Mikel Lizarralde, Rosemarie Babl</div></div></div>
+    <div class="tl-row"><div class="tl-year">2023</div><div><div class="tl-title">Heilerausbildung / Energien lesen lernen</div><div class="tl-people">Birgit Fischer</div></div></div>
+    <div class="tl-row"><div class="tl-year">2024</div><div><div class="tl-title">Starseed Academy</div><div class="tl-people">Birgit Fischer</div></div></div>
+    <div class="tl-row"><div class="tl-year">2025/26</div><div><div class="tl-title">Trance-Workshop „Dein intergalaktisches Potential als Mensch leben“ (Biberist) / Starseed Extreme (St. Pölten)</div><div class="tl-people">Birgit Fischer</div></div></div>
+  </div>
+
+  <div class="wrap">
+    <div class="mini-gallery">
+      <div class="photo-frame reveal" style="aspect-ratio:4/3;">
+        <img src="{{ base_url }}/assets/images/meinweg-1.jpg" alt="Naturimpression — Baum" loading="lazy">
+      </div>
+      <div class="photo-frame reveal d1" style="aspect-ratio:4/3;">
+        <img src="{{ base_url }}/assets/images/meinweg-3.jpg" alt="Naturimpression — Blüten" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

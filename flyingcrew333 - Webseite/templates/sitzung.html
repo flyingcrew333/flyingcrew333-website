@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ sitzung.title }} — {{ site.brand }}{% endblock %}
+{% block content %}
+
+<div class="page-header wrap">
+  <p class="eyebrow">{{ site.person }}</p>
+  <h1 style="margin-top:16px;">{{ sitzung.title }}</h1>
+  <p class="lead">{{ sitzung.subtitle }}</p>
+</div>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="photo-frame tint sitzung-header-photo reveal">
+      <img src="{{ base_url }}{{ sitzung.image }}" alt="{{ sitzung.title }}" loading="lazy">
+    </div>
+
+    <div class="sitzung-body reveal d1">
+      {% for section in sitzung.sections %}
+        {% if section.heading %}<h3>{{ section.heading }}</h3>{% endif %}
+        {% for p in section.paragraphs %}<p>{{ p }}</p>{% endfor %}
+      {% endfor %}
+
+      <div style="margin-top:50px;">
+        <a href="{{ base_url }}/#kontakt" class="btn solid">Jetzt anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

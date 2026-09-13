@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}{{ site.person }} — {{ site.brand }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.person }} unterstützt dich mit energetischer Begleitung, Meditation und täglichen Impulsen auf deinem Weg zu dir selbst.{% endblock %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ base_url }}/assets/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="grain"></div>
+
+<header>
+  <nav class="wrap nav">
+    <a href="{{ base_url }}/" class="brand">
+      <img class="brand-mark" src="{{ base_url }}/assets/images/logo-mark.png" alt="{{ site.brand }} Logo">
+      {{ site.brand }}
+    </a>
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="menu-btn"><span></span><span></span><span></span></label>
+    <div class="navlinks">
+      {% for item in site.nav %}
+      <a href="{{ base_url }}{{ item.url }}"{% if item.url == page_url %} class="active"{% endif %}>{{ item.label }}</a>
+      {% endfor %}
+    </div>
+  </nav>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="{{ base_url }}/assets/images/logo-mark.png" alt="{{ site.brand }} Logo">
+        {{ site.brand }}
+      </div>
+      <div class="foot-nav">
+        {% for item in site.nav %}
+        <a href="{{ base_url }}{{ item.url }}">{{ item.label }}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <details>
+      <summary>Datenschutzerklärung</summary>
+      <div class="legal-text">
+        <h4>1. Verantwortliche Stelle</h4>
+        <p>{{ site.impressum.name }}, {{ site.impressum.street }}, {{ site.impressum.city }}, {{ site.impressum.country }} — E-Mail: {{ site.contact.email }}</p>
+        <h4>2. Hosting</h4>
+        <p>Diese Website wird über einen Static-Hosting-Anbieter betrieben. Beim Besuch werden technische Zugriffsinformationen verarbeitet, insbesondere IP-Adressen, zur Bereitstellung, Sicherheit und Stabilität der Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+        <h4>3. Server-Logfiles</h4>
+        <p>Beim Besuch werden automatisch erhoben: IP-Adresse, Datum/Uhrzeit des Zugriffs, Browsertyp/-version, Betriebssystem, Referrer-URL, aufgerufene Seiten. Diese Daten dienen ausschließlich der technischen Bereitstellung, Sicherheit und Optimierung.</p>
+        <h4>4. Kontaktformular und E-Mail</h4>
+        <p>Bei Kontaktaufnahme werden die angegebenen Daten ausschließlich zur Bearbeitung der Anfrage verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO. Löschung erfolgt, sobald die Daten nicht mehr erforderlich sind.</p>
+        <h4>5. Cookies</h4>
+        <p>Diese Website verwendet technisch notwendige Cookies. Darüberhinausgehende Cookies erfolgen nur nach vorheriger Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO.</p>
+        <h4>6. Rechte der betroffenen Personen</h4>
+        <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerruf einer Einwilligung sowie Beschwerde bei einer zuständigen Aufsichtsbehörde.</p>
+        <p style="margin-top:14px;">Stand: {{ site.impressum.datenschutz_stand }}</p>
+      </div>
+    </details>
+
+    <div class="foot-bottom">
+      <span>{{ site.footer_copyright }}</span>
+      <a href="{{ base_url }}/impressum/">Impressum</a>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ base_url }}/assets/js/site.js"></script>
+{% block extra_script %}{% endblock %}
+</body>
+</html>

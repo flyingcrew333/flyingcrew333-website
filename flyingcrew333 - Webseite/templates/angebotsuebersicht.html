@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Angebotsübersicht — {{ site.brand }}{% endblock %}
+{% block content %}
+
+<section>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" style="justify-content:center;">So kann ich dich begleiten</p>
+      <h2>Angebotsübersicht</h2>
+    </div>
+    <div class="offer-grid">
+      {% for offer in angebote %}
+      <div class="tilt-outer reveal d{{ loop.index0 }}">
+        <div class="offer-card panel tilt">
+          {% if offer.icon == 'kreis' %}
+          <svg class="offer-icon" viewBox="0 0 52 52" fill="none"><circle cx="26" cy="26" r="19" stroke="#ff7e52" stroke-width="2"/><circle cx="26" cy="26" r="11" stroke="#48e6cd" stroke-width="2"/><circle cx="26" cy="26" r="3" fill="#ff7e52"/></svg>
+          {% elif offer.icon == 'person' %}
+          <svg class="offer-icon" viewBox="0 0 52 52" fill="none"><circle cx="26" cy="18" r="9" stroke="#48e6cd" stroke-width="2"/><line x1="26" y1="27" x2="26" y2="44" stroke="#48e6cd" stroke-width="2"/><path d="M17 44H35" stroke="#ff7e52" stroke-width="2" stroke-linecap="round"/></svg>
+          {% else %}
+          <svg class="offer-icon" viewBox="0 0 52 52" fill="none"><path d="M8 40C14 26 20 20 26 20C32 20 38 26 44 40" stroke="#48e6cd" stroke-width="2" fill="none"/><circle cx="26" cy="13" r="5" fill="#ff7e52"/></svg>
+          {% endif %}
+          <h3>{{ offer.title }}</h3>
+          <p class="desc">{{ offer.desc }}</p>
+          <ul class="offer-pillars">
+            {% for pillar in offer.pillars %}
+            <li><b>{{ pillar[0] }}</b> — {{ pillar[1] }}</li>
+            {% endfor %}
+          </ul>
+          <div class="offer-price">
+            <div class="price-num">{{ offer.price }}</div>
+            <div class="price-meta"><span>{{ offer.duration }}</span><span>{{ offer.location }}</span></div>
+            <a href="{{ base_url }}/#kontakt" class="btn solid" style="width:100%; justify-content:center;">Jetzt anfragen</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Impressionen</p>
+      <h2 style="font-size:clamp(24px,3vw,34px); margin-top:14px;">Momente aus der Natur</h2>
+    </div>
+    <div class="gallery">
+      <div class="photo-frame reveal"><img src="{{ base_url }}/assets/images/angebot-1.jpg" alt="Sonnenuntergang am See" loading="lazy"></div>
+      <div class="photo-frame reveal d1"><img src="{{ base_url }}/assets/images/angebot-2.jpg" alt="Abendstimmung über den Bergen" loading="lazy"></div>
+      <div class="photo-frame reveal d2"><img src="{{ base_url }}/assets/images/angebot-3.jpg" alt="Ausblick über die Landschaft" loading="lazy"></div>
+      <div class="photo-frame reveal d3"><img src="{{ base_url }}/assets/images/angebot-4.jpg" alt="Spiegelung im Wasser" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
