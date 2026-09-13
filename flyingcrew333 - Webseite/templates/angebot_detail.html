@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}{{ offer.card_title }} — {{ site.brand }}{% endblock %}
+{% block content %}
+
+<div class="page-header wrap">
+  <a href="{{ base_url }}/angebotsuebersicht/" class="impuls-back mono"><span>←</span> Zurück zur Angebotsübersicht</a>
+  <h1 style="margin-top:16px; font-size:clamp(30px,4.5vw,48px);">{{ offer.heading }}</h1>
+</div>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="photo-frame tint sitzung-header-photo reveal">
+      <img src="{{ base_url }}{{ offer.image }}" alt="{{ offer.card_title }}" loading="lazy">
+    </div>
+
+    <div class="sitzung-body reveal d1">
+      {% for p in offer.intro %}<p>{{ p }}</p>{% endfor %}
+
+      {% if offer.tags %}
+      <ul class="offer-pillars" style="margin:26px 0;">
+        {% for tag in offer.tags %}<li>{{ tag }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      {% if offer.pillars_intro %}<p>{{ offer.pillars_intro }}</p>{% endif %}
+
+      {% if offer.pillars %}
+      <div style="margin:36px 0; display:flex; flex-direction:column; gap:22px;">
+        {% for pillar in offer.pillars %}
+        <div>
+          <h3 style="font-size:18px; margin-bottom:6px;">{{ pillar.title }}</h3>
+          <p style="margin:0;">{{ pillar.desc }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if offer.section_label %}<p class="eyebrow" style="margin-top:30px;">{{ offer.section_label }}</p>{% endif %}
+
+      <div class="panel" style="padding:28px 30px; margin-top:30px; max-width:380px;">
+        {% if offer.category %}<div class="mono" style="font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-faint); margin-bottom:8px;">{{ offer.category }}</div>{% endif %}
+        {% if offer.price_label %}<div class="mono" style="font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-faint); margin-bottom:8px;">{{ offer.price_label }}</div>{% endif %}
+        <div class="price-num">{{ offer.price }}</div>
+        <div class="price-meta">
+          {% if offer.duration %}<span>{{ offer.duration }}</span>{% endif %}
+          {% if offer.location %}<span>{{ offer.location }}</span>{% endif %}
+          {% if offer.extra %}<span>{{ offer.extra }}</span>{% endif %}
+        </div>
+        <a href="{{ base_url }}/angebotsuebersicht/#kontakt" class="btn solid" style="width:100%; justify-content:center; margin-top:12px;">{{ offer.cta or "Jetzt anfragen" }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
