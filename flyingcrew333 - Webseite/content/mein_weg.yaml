@@ -1,0 +1,39 @@
+portrait_image: "/assets/images/meinweg-2.jpg"
+portrait_position: 50
+
+about:
+  - "Als Energetikerin begleite ich Menschen dabei, neue Perspektiven zu entdecken, ihre Intuition zu stärken und mehr Leichtigkeit in ihr Leben zu bringen."
+  - "Im Mittelpunkt meiner Arbeit stehen die Verbindung von Herz, Bauchgefühl und Energie sowie die bewusste Wahrnehmung der eigenen inneren Ressourcen."
+  - "Dabei nutze ich verschiedene Methoden der Energiearbeit, Meditation und spirituelle Begleitung."
+  - "Besonders wichtig sind mir Dankbarkeit, die Verbindung zur Natur und das Vertrauen in die eigene innere Weisheit."
+  - "Meine Erfahrungen haben mir gezeigt, dass sich dadurch mehr Klarheit, Lebensfreude und innere Balance entwickeln können."
+  - "Jeder Mensch hat seinen eigenen Weg. Meine Arbeit soll dich dabei unterstützen, diesen Weg bewusster wahrzunehmen und mit mehr Vertrauen zu gehen."
+
+timeline:
+  - year: "2019"
+    title: "Basisseminar der Spiritual Response Technique (SRT)"
+    people: "Rosemarie Babl"
+  - year: "2020"
+    title: "Fortgeschrittenen-Seminar der Spiritual Response Technique (SRT) / Mediumship Boot Camp"
+    people: "Rosemarie Babl, Mikel Lizzaralde"
+  - year: "2022"
+    title: "Sterbebegleitung und Medialität – Workshop / Seminar der spirituellen Umstrukturierung (SpU) / Trance und Channeling"
+    people: "Mikel Lizzaralde, Rosemarie Babl"
+  - year: "2023"
+    title: "Heilerausbildung / Energien lesen lernen"
+    people: "Birgit Fischer"
+  - year: "2024"
+    title: "Starseed Academy"
+    people: "Birgit Fischer"
+  - year: "2025/2026"
+    title: "Trance Workshop – Dein intergalaktisches Potenzial als Mensch leben, Biberist / Starseed Extreme, St. Pölten"
+    people: "Birgit Fischer"
+
+gallery:
+  - image: "/assets/images/meinweg-1.jpg"
+    position: "center"
+  - image: "/assets/images/meinweg-3.jpg"
+    position: "center"
+
+vision_eyebrow: "Ein Leben in bewusster Energie"
+vision_text: "Meine Vision ist es, Menschen dabei zu unterstützen, ihre innere Kraftquelle neu zu entdecken. Durch energetische Impulse und bewusstes Erleben schaffen wir einen Raum für Wachstum, in dem Klarheit und Leichtigkeit den täglichen Weg bestimmen. Es geht darum, nicht nur zu existieren, sondern mit jeder Faser präsent zu sein."

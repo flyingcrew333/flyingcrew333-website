@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block description %}{{ site.person }}, Energetikerin in Surberg (Chiemgau): energetische Begleitung, Meditation, geführte Naturmeditationen und tägliche Impulse für mehr Klarheit und Leichtigkeit.{% endblock %}
+{% block content %}
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <h1>
+      <span class="line">{{ site.tagline_top }}</span>
+      <span class="line"><em>{{ site.tagline_em }}</em> {{ site.tagline_after }}</span>
+    </h1>
+    <div class="hero-ctas">
+      <a href="{{ base_url }}/tagliche-impulse/" class="btn">Tagesimpulse</a>
+      <a href="{{ base_url }}/mein-weg/" class="btn">Mein Weg</a>
+      <a href="{{ base_url }}/angebotsuebersicht/" class="btn">Angebotsübersicht</a>
+      <a href="{{ site.home_cta.url }}" class="btn solid">{{ site.home_cta.label }}</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
