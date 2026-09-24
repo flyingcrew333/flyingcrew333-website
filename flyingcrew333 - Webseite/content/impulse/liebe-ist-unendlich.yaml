@@ -1,16 +1,27 @@
-slug: liebe-ist-unendlich
 title: Liebe ist unendlich
 theme: t1
+icon: <path d="M12 21C7 17 3 13.5 3 9C3 6 5.2 4 8 4C9.8 4 11.2 5 12 6.3C12.8 5
+  14.2 4 16 4C18.8 4 21 6 21 9C21 13.5 17 17 12 21Z"/>
 image: /assets/images/impulse/liebe-ist-unendlich.jpg
-icon: <path d="M12 21C7 17 3 13.5 3 9C3 6 5.2 4 8 4C9.8 4 11.2 5 12 6.3C12.8 5 14.2 4 16 4C18.8 4 21 6 21 9C21 13.5 17 17 12 21Z"/>
+image_position: 16
+custom_format: true
 body:
-- Liebe ist unendlich. Sie begleitet dich in jedem Moment, auch wenn du sie manchmal nicht wahrnimmst.
-- Betrachte die Rose. Sie zeigt sich in ihrer vollen Schönheit, verströmt ihren Duft und öffnet sich dem Licht. Ja, sie trägt Stacheln. Doch wer ihre Natur versteht, fürchtet sie nicht. Die Stacheln nehmen ihr nichts von ihrer Schönheit.
-- Vielleicht ist es bei den Menschen genauso. Jeder trägt seine Erfahrungen, seine Narben und seine Schutzmechanismen in sich.
-- Doch hinter all dem liegt ein Herz, das lieben und geliebt werden möchte.
-- Öffne heute dein Herz für die Schönheit des Lebens.
-- Begegne dir selbst und anderen mit etwas mehr Verständnis, etwas mehr Mitgefühl und etwas mehr Liebe. Lass die Liebe frei fließen und beobachte, wie sich dadurch etwas in dir verändert.
-- Denn in dem Moment, in dem Liebe deinen Blick auf das Leben berührt, entsteht Weite. Und in dieser Weite offenbart sich eine tiefe, innere Freiheit.
+  - Liebe ist unendlich. Sie begleitet dich in jedem Moment, auch wenn du sie
+    manchmal nicht wahrnimmst.
+  - Betrachte die Rose. Sie zeigt sich in ihrer vollen Schönheit, verströmt
+    ihren Duft und öffnet sich dem Licht. Ja, sie trägt Stacheln. Doch wer ihre
+    Natur versteht, fürchtet sie nicht. Die Stacheln nehmen ihr nichts von ihrer
+    Schönheit.
+  - Vielleicht ist es bei den Menschen genauso. Jeder trägt seine Erfahrungen,
+    seine Narben und seine Schutzmechanismen in sich.
+  - Doch hinter all dem liegt ein Herz, das lieben und geliebt werden möchte.
+  - Öffne heute dein Herz für die Schönheit des Lebens.
+  - Begegne dir selbst und anderen mit etwas mehr Verständnis, etwas mehr
+    Mitgefühl und etwas mehr Liebe. Lass die Liebe frei fließen und beobachte,
+    wie sich dadurch etwas in dir verändert.
+  - Denn in dem Moment, in dem Liebe deinen Blick auf das Leben berührt,
+    entsteht Weite. Und in dieser Weite offenbart sich eine tiefe, innere
+    Freiheit.
+slug: liebe-ist-unendlich
 cta_question: Möchtest du tiefer gehen?
 order: 0
-image_position: 50
