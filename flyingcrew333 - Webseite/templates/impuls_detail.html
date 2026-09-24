@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}{{ imp.title }} — Tagesimpuls — {{ site.brand }}{% endblock %}
+{% block description %}{{ imp.body[0] }}{% endblock %}
+{% block content %}
+
+<section class="tight">
+  <div class="wrap impuls-detail">
+    <a href="{{ base_url }}/tagliche-impulse/" class="impuls-back mono"><span>←</span> Zurück zu Tägliche Impulse</a>
+    <div class="impuls-icon {{ imp.theme }}">
+      <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2L13.5 8.5L20 7L15.5 12L20 17L13.5 15.5L12 22L10.5 15.5L4 17L8.5 12L4 7L10.5 8.5Z"/></svg>
+    </div>
+    <p class="eyebrow">Tagesimpuls</p>
+    <h2 style="margin-top:14px;">{{ imp.title }}</h2>
+    {% if imp.image %}
+    {% if imp.custom_format %}
+    <div class="photo-frame reveal" style="margin:30px 0;">
+      <img src="{{ base_url }}{{ imp.image }}" alt="{{ imp.title }}" loading="lazy" style="width:100%; height:auto; display:block;">
+    </div>
+    {% else %}
+    <div class="photo-frame reveal" style="aspect-ratio:4/3; margin:30px 0;">
+      <img src="{{ base_url }}{{ imp.image }}" alt="{{ imp.title }}" loading="lazy" style="object-position: center {{ imp.image_position|default(50) }}%;">
+    </div>
+    {% endif %}
+    {% endif %}
+    <div class="impuls-body">
+      {% for p in imp.body %}<p>{{ p }}</p>{% endfor %}
+      {% if imp.cta_question %}<p>{{ imp.cta_question }}</p>{% endif %}
+      <p style="margin-top:26px;"><a href="{{ base_url }}/angebotsuebersicht/#kontakt" class="btn solid">{{ imp.cta_label or "Begleitung anfragen" }}</a></p>
+    </div>
+    <div class="impuls-nav">
+      <a href="{{ base_url }}/tagliche-impulse/{{ prev.slug }}/">← {{ prev.title }}</a>
+      <a href="{{ base_url }}/tagliche-impulse/{{ next.slug }}/">{{ next.title }} →</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Mein Weg — {{ site.brand }}{% endblock %}
+{% block description %}Mein Weg als Energetikerin: Ausbildung in Spiritual Response Technique (SRT), Medialität und Starseed-Coaching nach Birgit Fischer. Lerne {{ site.person }} und ihre Vision kennen.{% endblock %}
+{% block content %}
+
+<div class="page-header wrap">
+  <p class="eyebrow">Mein Weg</p>
+</div>
+
+<section class="tight">
+  <div class="wrap about-grid">
+    <div class="portrait-wrap reveal">
+      {% if mein_weg.portrait_custom_format %}
+      <div class="photo-frame tint" style="aspect-ratio:auto;">
+        <img src="{{ base_url }}{{ mein_weg.portrait_image }}" alt="{{ site.person }}" loading="lazy" style="width:100%; height:auto; display:block;">
+      </div>
+      {% else %}
+      <div class="photo-frame tint portrait-frame">
+        <img src="{{ base_url }}{{ mein_weg.portrait_image }}" alt="{{ site.person }}" loading="lazy" style="object-position: center {{ mein_weg.portrait_position|default(50) }}%;">
+      </div>
+      {% endif %}
+    </div>
+    <div class="about-text reveal d1">
+      {% for p in mein_weg.about %}<p>{{ p }}</p>{% endfor %}
+    </div>
+  </div>
+
+  <div class="wrap timeline">
+    {% for row in mein_weg.timeline %}
+    <div class="tl-row"><div class="tl-year">{{ row.year }}</div><div><div class="tl-title">{{ row.title }}</div><div class="tl-people">{{ row.people }}</div></div></div>
+    {% endfor %}
+  </div>
+
+  <div class="wrap">
+    <div class="mini-gallery">
+      {% for img in mein_weg.gallery %}
+      <div class="photo-frame reveal" style="aspect-ratio:4/3;">
+        <img src="{{ base_url }}{{ img.image }}" alt="Naturimpression" loading="lazy" style="object-position: center {{ img.position|default('center') }};">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="vision">
+  <div class="wrap reveal">
+    <p class="eyebrow" style="justify-content:center;">{{ mein_weg.vision_eyebrow }}</p>
+    <h2 style="margin-top:18px;">{{ mein_weg.vision_text }}</h2>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Wanderungen — {{ site.brand }}{% endblock %}
+{% block description %}Gemeinsame Wanderungen mit Meditation und Naturerlebnis, begleitet von {{ site.person }} — aktuelle Termine, Treffpunkte und Preise.{% endblock %}
+{% block content %}
+
+<div class="page-header wrap">
+  <p class="eyebrow">Gemeinsam unterwegs</p>
+  <h1 style="margin-top:16px;">Wanderungen</h1>
+  <p class="lead">Naturerlebnis, gemeinsame Meditation und ein Stück Weggemeinschaft — hier findest du die aktuellen Termine.</p>
+</div>
+
+<section class="tight">
+  <div class="wrap wanderung-grid">
+    {% for w in wanderungen %}
+    <a href="{{ base_url }}/wanderungen/{{ w.slug }}/" class="wanderung-card panel reveal d{{ loop.index0 }}">
+      <div class="photo-frame" style="border-radius:0; border:none;">
+        <img src="{{ base_url }}{{ w.image }}" alt="{{ w.title }}" loading="lazy">
+      </div>
+      <div class="wanderung-card-body">
+        <h3 style="font-size:20px;">{{ w.title }}</h3>
+        <div class="wanderung-meta">
+          <span><b>Datum:</b> {{ w.date }}</span>
+          <span><b>Treffpunkt:</b> {{ w.meeting_point }}</span>
+          <span><b>Energieausgleich:</b> {{ w.price }}</span>
+        </div>
+        <span class="btn small">Details ansehen</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

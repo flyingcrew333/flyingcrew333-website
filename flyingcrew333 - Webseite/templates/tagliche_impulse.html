@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Tägliche Impulse — {{ site.brand }}{% endblock %}
+{% block description %}14 kraftvolle Tagesimpulse für energetische Balance und inneres Wachstum — von Liebe und Dankbarkeit bis Starseeds und Krafttiere.{% endblock %}
+{% block content %}
+
+<section>
+  <div class="wrap">
+    <div class="impulse-intro reveal">
+      <h2 style="font-size:clamp(28px,3.8vw,44px);">Tägliche Impulse</h2>
+      <p style="color:var(--text-dim); margin-top:16px;">Entdecke 14 kraftvolle Begleiter für deinen Alltag. Jeden Tag eine neue Inspiration, um deine energetische Balance zu finden und inneres Wachstum zu fördern.</p>
+      <p style="color:var(--text-dim);">Klicke intuitiv auf einen Impuls und lasse dich von den Energien dieses Tages begleiten. Viel Spaß!</p>
+    </div>
+    <div class="impulse-grid reveal d1">
+      {% for imp in impulse %}
+      <a class="imp-tile" href="{{ base_url }}/tagliche-impulse/{{ imp.slug }}/">
+        <div class="imp-tile-inner">
+          <div class="imp-tile-face imp-tile-front {{ imp.theme }}">
+            <svg class="imp-star" viewBox="0 0 24 24"><path d="M12 2L13.5 8.5L20 7L15.5 12L20 17L13.5 15.5L12 22L10.5 15.5L4 17L8.5 12L4 7L10.5 8.5Z"/></svg>
+            <span>{{ imp.title }}</span>
+          </div>
+          <div class="imp-tile-face imp-tile-back" style="background-image:url('{{ base_url }}{{ imp.image }}'); background-position: center {{ imp.image_position|default(50) }}%;">
+            <span>{{ imp.title }}</span>
+            <span class="imp-tile-open">Klicken, um mehr zu sehen →</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}
